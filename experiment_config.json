@@ -1,0 +1,20 @@
+{
+  "models": [
+    {"name": "model_a", "model": "deepseek-flash", "base_url": "https://api.deepseek.com/v1", "api_key_env": "DEEPSEEK_API_KEY", "enabled": true, "temperature": 0.5, "json_temperature": 0.1, "json_mode": true, "max_tokens": 4096, "timeout_seconds": 90, "request_attempts": 5, "extra_body": {"thinking": {
+      "type": "disabled"
+    }}},
+    {"name": "model_b", "model": "qwen3.8-flash", "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1", "api_key_env": "DASHSCOPE_API_KEY", "enabled": false, "temperature": 0.5, "json_temperature": 0.1, "json_mode": true, "max_tokens": 4096, "timeout_seconds": 90, "request_attempts": 5, "extra_body": {"enable_thinking": false}}
+  ],
+  "datasets": [
+    {"name": "network", "kind": "course", "path": "数据集改版.xlsx", "graph": "prepared_graphs/course_graph.json", "domain": "《计算机网络》", "max_chapter": 99},
+    {"name": "network_injection", "kind": "course", "path": "数据集改版-提示词注入.xlsx", "graph": "prepared_graphs/course_graph.json", "domain": "《计算机网络》", "max_chapter": 99},
+    {"name": "entailment", "kind": "entailmentbank", "graphs": "prepared_graphs/task2_graphs.jsonl", "labels": "prepared_graphs/task2_labels.jsonl", "domain": "通用科学", "intent_override": "assignment_problem"}
+  ],
+  "experiments": ["full_method", "baseline1", "baseline2", "baseline3", "no_agent2", "no_agent4", "full_kg", "topk", "static_graph", "no_relations", "agent1_only"],
+  "budget": 8,
+  "max_rounds": 4,
+  "repeats": 1,
+  "embedding_model": null,
+  "output_dir": "experiments_final",
+  "request_interval_seconds": 0.2
+}
