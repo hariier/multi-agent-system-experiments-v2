@@ -1,0 +1,27 @@
+{
+  "neighbors": 8,
+  "edge_penalty": 0.08,
+  "budget": 8,
+  "embedding_model": null,
+  "selection_rule": "max macro F1; tie -> max complete_recall; tie -> min selected_count",
+  "development_summary": {
+    "k": 8,
+    "edge_penalty": 0.08,
+    "budget": 8,
+    "samples": 187,
+    "precision": 0.37396231219760634,
+    "recall": 0.625255226057365,
+    "f1": 0.42886898310359844,
+    "complete_recall": 0.26737967914438504,
+    "selected_count": 6.818181818181818,
+    "seed_gold_rate": 0.6951871657754011,
+    "reachable_gold_ratio": 0.9800842651110031,
+    "stop_budget_reached_rate": 0.6149732620320856,
+    "stop_no_reachable_candidate_rate": 0.016042780748663103,
+    "stop_budget_blocked_rate": 0.0,
+    "stop_no_positive_gain_rate": 0.3689839572192513,
+    "stop_no_positive_seed_rate": 0.0,
+    "stop_no_content_rate": 0.0,
+    "stop_stopped_rate": 0.0
+  }
+}

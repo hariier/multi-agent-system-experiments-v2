@@ -1,0 +1,32 @@
+[
+  {
+    "k": 3,
+    "samples": 187,
+    "mean_nodes": 25,
+    "mean_edges": 22.97326203208556,
+    "mean_components": 6.475935828877005,
+    "mean_isolated_nodes": 3.1550802139037435,
+    "mean_largest_component": 12.663101604278076,
+    "mean_degree": 1.837860962566845
+  },
+  {
+    "k": 5,
+    "samples": 187,
+    "mean_nodes": 25,
+    "mean_edges": 40.096256684491976,
+    "mean_components": 2.7914438502673797,
+    "mean_isolated_nodes": 1.4438502673796791,
+    "mean_largest_component": 22.46524064171123,
+    "mean_degree": 3.207700534759358
+  },
+  {
+    "k": 8,
+    "samples": 187,
+    "mean_nodes": 25,
+    "mean_edges": 63.786096256684495,
+    "mean_components": 1.9037433155080214,
+    "mean_isolated_nodes": 0.7593582887700535,
+    "mean_largest_component": 23.844919786096256,
+    "mean_degree": 5.102887700534759
+  }
+]
